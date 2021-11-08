@@ -4,7 +4,7 @@
 
 ### How to run
 
-First, you will have to make a Shrimpy account and get an API key and Secret. Feel free to email me (pc2858@columbia.edu) if you would prefer to just use mine to test the webpage.
+First, you will have to make a Shrimpy account and get an API key and Secret. Feel free to email me if you would prefer to just use mine to test the webpage.
 
 Once you have the Api key and secret you should add them to a secrets.json file in the same directory as app.py. It should look like:
 
