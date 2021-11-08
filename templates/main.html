@@ -13,33 +13,51 @@
         <thead>
           <tr>
             <th class="tg-0lax" rowspan="2"></th>
-            <th class="tg-0lax" colspan="2">Exchange 1</th>
-            <th class="tg-0lax" colspan="2">Exchange 2</th>
+            <th class="tg-0lax" colspan="2">Coinbase</th>
+            <th class="tg-0lax" colspan="2">Binance</th>
           </tr>
           <tr>
-            <th class="tg-0lax">Ask</th>
-            <th class="tg-0lax">Bid</th>
-            <th class="tg-0lax">Ask</th>
-            <th class="tg-0lax">Bid</th>
+            <th class="tg-0lax">Buy</th>
+            <th class="tg-0lax">Sell</th>
+            <th class="tg-0lax">Buy</th>
+            <th class="tg-0lax">Sell</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="tg-0lax">BTC</td>
-            <td class="tg-0lax">p1</td>
-            <td class="tg-0lax">p2</td>
-            <td class="tg-0lax">p3</td>
-            <td class="tg-0lax">p4</td>
+            <td class="tg-0lax">${{p["coinbase"]["BTC"]["ask"]}}</td>
+            <td class="tg-0lax">${{p["coinbase"]["BTC"]["bid"]}}</td>
+            <td class="tg-0lax">${{p["binance"]["BTC"]["ask"]}}</td>
+            <td class="tg-0lax">${{p["binance"]["BTC"]["bid"]}}</td>
           </tr>
           <tr>
             <td class="tg-0lax">ETH</td>
-            <td class="tg-0lax">p5</td>
-            <td class="tg-0lax">p6</td>
-            <td class="tg-0lax">p7</td>
-            <td class="tg-0lax">p8</td>
+            <td class="tg-0lax">${{p["coinbase"]["ETH"]["ask"]}}</td>
+            <td class="tg-0lax">${{p["coinbase"]["ETH"]["bid"]}}</td>
+            <td class="tg-0lax">${{p["binance"]["ETH"]["ask"]}}</td>
+            <td class="tg-0lax">${{p["binance"]["ETH"]["bid"]}}</td>
           </tr>
         </tbody>
       </table>
+    </div>
+    <div>
+      <p>
+        If you are looking to buy Bitcoin, you should go to
+        {{recs["BTC-sell-rec"]}}
+      </p>
+      <p>
+        If you are looking to sell Bitcoin, you should go to
+        {{recs["BTC-buy-rec"]}}
+      </p>
+      <p>
+        If you are looking to buy Ethereum, you should go to
+        {{recs["ETH-sell-rec"]}}
+      </p>
+      <p>
+        If you are looking to buy Ethereum, you should go to
+        {{recs["ETH-buy-rec"]}}
+      </p>
     </div>
   </body>
 </html>
