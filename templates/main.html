@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <style type="text/css"></style>
+  <script>
+    function timedRefresh(timeoutPeriod) {
+      setTimeout("location.reload(true);", timeoutPeriod);
+    }
+
+    window.onload = timedRefresh(15000);
+  </script>
   <head>
     <link rel="stylesheet" href="../static/styles/main.css" />
   </head>
   <body>
-    <div>
-      <h1>My Crypto Tracker</h1>
+    <div class="top">
+      <h1 class="text-orange">My Crypto Tracker</h1>
     </div>
     <div>
-      <table class="tg">
+      <table class="table">
         <thead>
           <tr>
-            <th class="tg-0lax" rowspan="2"></th>
-            <th class="tg-0lax" colspan="2">Coinbase</th>
-            <th class="tg-0lax" colspan="2">Binance</th>
+            <th class="row" rowspan="2"></th>
+            <th class="row" colspan="2">Coinbase</th>
+            <th class="row" colspan="2">Binance</th>
           </tr>
           <tr>
-            <th class="tg-0lax">Buy</th>
-            <th class="tg-0lax">Sell</th>
-            <th class="tg-0lax">Buy</th>
-            <th class="tg-0lax">Sell</th>
+            <th class="row">Buy</th>
+            <th class="row">Sell</th>
+            <th class="row">Buy</th>
+            <th class="row">Sell</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="tg-0lax">BTC</td>
-            <td class="tg-0lax">${{p["coinbase"]["BTC"]["ask"]}}</td>
-            <td class="tg-0lax">${{p["coinbase"]["BTC"]["bid"]}}</td>
-            <td class="tg-0lax">${{p["binance"]["BTC"]["ask"]}}</td>
-            <td class="tg-0lax">${{p["binance"]["BTC"]["bid"]}}</td>
+            <td class="row">BTC</td>
+            <td class="row">${{p["coinbase"]["BTC"]["ask"]}}</td>
+            <td class="row">${{p["coinbase"]["BTC"]["bid"]}}</td>
+            <td class="row">${{p["binance"]["BTC"]["ask"]}}</td>
+            <td class="row">${{p["binance"]["BTC"]["bid"]}}</td>
           </tr>
           <tr>
-            <td class="tg-0lax">ETH</td>
-            <td class="tg-0lax">${{p["coinbase"]["ETH"]["ask"]}}</td>
-            <td class="tg-0lax">${{p["coinbase"]["ETH"]["bid"]}}</td>
-            <td class="tg-0lax">${{p["binance"]["ETH"]["ask"]}}</td>
-            <td class="tg-0lax">${{p["binance"]["ETH"]["bid"]}}</td>
+            <td class="row">ETH</td>
+            <td class="row">${{p["coinbase"]["ETH"]["ask"]}}</td>
+            <td class="row">${{p["coinbase"]["ETH"]["bid"]}}</td>
+            <td class="row">${{p["binance"]["ETH"]["ask"]}}</td>
+            <td class="row">${{p["binance"]["ETH"]["bid"]}}</td>
           </tr>
         </tbody>
       </table>
     </div>
     <div>
-      <p>
+      <p class="text-blue">
         If you are looking to buy Bitcoin, you should go to
         {{recs["BTC-buy-rec"]}}
       </p>
-      <p>
+      <p class="text-blue">
         If you are looking to sell Bitcoin, you should go to
         {{recs["BTC-sell-rec"]}}
       </p>
-      <p>
+      <p class="text-blue">
         If you are looking to buy Ethereum, you should go to
         {{recs["ETH-buy-rec"]}}
       </p>
-      <p>
+      <p class="text-blue">
         If you are looking to buy Ethereum, you should go to
         {{recs["ETH-sell-rec"]}}
       </p>

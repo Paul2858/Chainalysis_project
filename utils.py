@@ -1,3 +1,5 @@
+import shrimpy
+import json
 
 
 def build_price_dic():

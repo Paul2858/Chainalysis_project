@@ -1,29 +1,57 @@
-.tg {
+body {
+  background-color: #fef7f1;
+  font-family: chainalysis-font;
+}
+
+.top {
+  background-color: #fef7f1;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  padding: 0%;
+}
+
+.text-orange {
+  color: #ed602a;
+}
+
+@font-face {
+  font-family: chainalysis-font;
+  src: url("https://www.chainalysis.com/wp-content/themes/chainalysis/fonts/chainalysis-bold-webfont.woff2")
+    format("woff2");
+  src: url("https://www.chainalysis.com/wp-content/themes/chainalysis/fonts/chainalysis-bold-webfont.woff2")
+    format("woff");
+}
+.text-blue {
+  color: #2c3b6f;
+}
+.table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.tg td {
-  border-color: black;
+.table td {
+  border-color: #282828;
   border-style: solid;
   border-width: 1px;
-  font-family: Arial, sans-serif;
+  font-family: chainalysis-font;
   font-size: 14px;
   overflow: hidden;
   padding: 10px 5px;
   word-break: normal;
 }
-.tg th {
-  border-color: black;
+.table th {
+  border-color: #282828;
   border-style: inset;
   border-width: 1px;
-  font-family: Arial, sans-serif;
+  font-family: chainalysis-font;
   font-size: 14px;
   font-weight: normal;
   overflow: hidden;
   padding: 10px 5px;
   word-break: normal;
 }
-.tg .tg-0lax {
+.table .row {
   text-align: center;
   vertical-align: top;
+  color: #282828;
 }

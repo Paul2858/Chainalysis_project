@@ -8,6 +8,11 @@ from utils import build_price_dic, get_rec
 app = Flask(__name__)
 
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
 @app.route('/stopServer', methods=['GET'])
 def stopServer():
     os.kill(os.getpid(), signal.SIGINT)
